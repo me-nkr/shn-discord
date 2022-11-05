@@ -9,6 +9,6 @@ module.exports = {
 
         const list = interaction.client.dictionary[guildId]
 
-		await interaction.reply(list ? list.join(', ') : 'No filter words');
+		await interaction.reply(list && list.length > 0 ? list.join(', ') : 'No filter words');
 	},
 };
