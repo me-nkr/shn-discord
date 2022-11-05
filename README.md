@@ -1,63 +1,25 @@
-# shn-discord
-Discord API hackathon
+# Message Filter
 
-# Create your own bot and add it to Team302 server
-- [Setup your bot](https://discord.com/developers/docs/getting-started#creating-an-app)
-- copy app id
-- copy bot token
+[add the bot to your server and try out](https://discord.com/api/oauth2/authorize?client_id=1038593693759844422&permissions=10240&scope=applications.commands%20bot)
 
-# Steps to develop 
-- clone this repository with `git clone https://github.com/me-nkr/shn-discord`
-- goto mail to find mail inviting you as collaborator to this repo
-- cd into this repository `cd shn-discord`
-- install dependencies `npm i`
-- create a file named *.env*
-- add the following to .env
-    ```
-    TOKEN=<your bot token>
-    CLIEN_ID=<your app id>
-    ```
-- run the code `npm run dev`
-- once you see the message ready, you're good to go
+## What is it ?
+a discord bot that automatically deletes messages containing filter words
 
-# Folder structure
+## commands
+- /add <word> add a filter word
+- /list list filter words
+- /remove <word> remove a filter word
 
-> .env -> environment vaiables
+## Technologies used
+- Discord.js (discord api wrapper)
+- Nodejs (runtime)
 
-> .gitignore -> git ignore file ( Don't modify )
-    
+## Collaborators
+- [Naveen KR](https://github.com/me-nkr)
+- [Santheri Bhat](https://github.com/santheri)
+- [Jyothish T R](https://github.com/Mr3lueSky)
 
-> README.md -> Readme file for documentation
-
-> app.js -> main entry file ( Don't modify )
-
-> package.json -> npm config file ( Don't modify )
-
-> package-lock.json -> npm config file ( Don't modify )
-
-
-> commands/ -> command logic files
-
-> utils/ -> utility files directory ( Don't change existing files, you may add files if confident )
-
-> events/ -> discord event configurations ( Don't modify existing files unless you know what you're doing )
-
-> node_modules/ -> node modules files ( Just ignore the whole thing )
-
-# Add commands
-
-> look at *commands/work* for example with documentation.
-
-- add a file with name of command to *commands* directory `touch commands/<exampleCommandName>`
-- in *commands/index.js* add a line `commands.<exampleCommandName> = require('./<exampleCommandName>')`
-- look at other command fies and try writing a command logic in *<exampleCommandName>*
-- once command logic is written, save the file, look at the terminal to see **Ready**
-- when ready go to discord server and try your newley created command
-
-
-# Additional Instructions
-- update which file you are working on in status channel of Team 302 discord server
-- don't work on same file simultaneously
-- once a command is written, test is on discord and verify it is working
-- only after verification commit the changes and push the code and update the status in discord server
-- make sure to write clear and understandable commit messages
+## Next steps
+- [ ] make commands executable by specefic roles only
+- [ ] format reply messages
+- [ ] add pattern recognization
