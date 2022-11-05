@@ -4,7 +4,7 @@
   "description": "Project for SHN 05-11-2022",
   "main": "app.js",
   "scripts": {
-    "serve": "node -r dotenv/config .",
+    "start": "node -r dotenv/config .",
     "dev": "nodemon -r dotenv/config ."
   },
   "repository": {
