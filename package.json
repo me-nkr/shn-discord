@@ -1,0 +1,27 @@
+{
+  "name": "shn-discord",
+  "version": "1.0.0",
+  "description": "Project for SHN 05-11-2022",
+  "main": "app.js",
+  "scripts": {
+    "serve": "node -r dotenv/config .",
+    "dev": "nodemon -r dotenv/config ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/me-nkr/shn-discord.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/me-nkr/shn-discord/issues"
+  },
+  "homepage": "https://github.com/me-nkr/shn-discord#readme",
+  "dependencies": {
+    "discord.js": "^14.6.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
