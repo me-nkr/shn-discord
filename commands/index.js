@@ -1,5 +1,5 @@
 const commands = module.exports;
 
 commands.ping = require('./ping');
-commands.work = require('./work');
-commands.sayhello = require('./sayhello');
+commands.list = require('./list');
+commands.add = require('./add');
